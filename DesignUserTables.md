@@ -7,16 +7,20 @@ Assume that one user has one unique **UserID**, one **FamilyName** and more than
 - UserID(**PK**)
 - DateCreated
 - FamilyName
+- Email
 - Address(Address will be in a separate table in the future as **State City Street**)
 - Region
 
-**children_tbl** includes below attributes:
+**Children_tbl** includes below attributes:
 
 - ChildID (**PK**)
 - UserID(**FK**)
-- ChildName
+- ChildFirstName
+- ChildMiddleName
+- ChildLastName
 - Gender
 - Age
+- Birthday
 - TopSize
 - BottomSize
 - Premium/Deluxe
@@ -28,7 +32,8 @@ Assume that one user has one unique **UserID**, one **FamilyName** and more than
 - ItemID(**FK**)
 - FitRating
 - StyleRating
-- AffilicatePurchase
+- InWardrobePurchase(**Y/N**)
+- AffilicatePurchase(**Y/N**)
 - PurchasePrice
 
 ## Generate sample data in two tables for training ##
